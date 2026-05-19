@@ -1,9 +1,0 @@
-services:
-  - type: worker
-    name: ringtone-bot
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    buildFilter:
-      paths:
-        - .buildpacks
