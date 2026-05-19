@@ -167,7 +167,7 @@ async def create_ffmpeg_ringtone(input_path: str, user_id: int, start_sec: float
     # Команда для FFmpeg: обрезка + нормализация + плавное начало (1.5с) и затухание (2с)
     # Используем встроенные аудиофильтры afade
     cmd = [
-        "ffmpeg", "-y",
+        "./ffmpeg", "-y",
         "-ss", str(start_sec),
         "-t", str(duration),
         "-i", input_path,
